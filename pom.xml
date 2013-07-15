@@ -3,7 +3,7 @@
 
 	<groupId>net.bigpoint</groupId>
 	<artifactId>jackson-legacy-introspector</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-gilt</version>
 
 	<name>Jackson Legacy Introspector</name>
 	<url>https://github.com/Laures/jackson-legacy-introspector</url>
@@ -31,13 +31,13 @@
 			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
 			<comments>
 			Copyright 2011 the original author or authors.
-			 
+
 			Licensed under the Apache License, Version 2.0 (the "License");
 			you may not use this file except in compliance with the License.
 			You may obtain a copy of the License at
-			
+
 			     http://www.apache.org/licenses/LICENSE-2.0
-			
+
 			Unless required by applicable law or agreed to in writing, software
 			distributed under the License is distributed on an "AS IS" BASIS,
 			WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
@@ -56,8 +56,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<url>https://github.com/Laures/maven-repository/raw/master</url>
+			<id>nexus</id>
+                        <url>https://nexus.gilt.com/nexus/content/repositories/thirdparty/</url>
 		</repository>
 	</distributionManagement>
 
@@ -144,7 +144,7 @@
 					<repositoryOwner>Laures</repositoryOwner>    <!-- github username -->
 				</configuration>
 				<executions>
-					<!-- run site-maven-plugin's 'site' target as part of the build's normal 
+					<!-- run site-maven-plugin's 'site' target as part of the build's normal
 						'deploy' phase -->
 					<execution>
 						<goals>
@@ -203,7 +203,7 @@
 								<dependencyDetailsEnabled>false</dependencyDetailsEnabled>
 								<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
 							</configuration>
-							<!-- simpler configuration without reportSets available for usual 
+							<!-- simpler configuration without reportSets available for usual
 								cases -->
 							<reports>
 								<report>dependencies</report>
